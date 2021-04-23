@@ -1,0 +1,135 @@
+:root{
+    --dourado:rgb(218, 200, 44);
+    --preto:rgb(26, 24, 24);
+}
+
+/*reset de configuração*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .geral{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .texto-princ{
+    margin-left: 5px;
+    color: var(--dourado);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/Parasita.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 90px;
+    text-align: justify;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.classificacao{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.filme-principal .botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.filme-principal .botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.filme-principal .botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .geral{
+    width: 70%;
+    /*margin-left: 30px;
+    margin-right: 100px;*/
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.titulo-sec{
+    margin-top:20px;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.rodape-geral{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.rodape{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.rodape nav a{
+    text-decoration: none;
+    color:grey;
+    margin-right: 10px;
+}
+
+.rodape nav a:hover{
+    color:#fff;
+}
